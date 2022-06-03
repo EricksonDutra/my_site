@@ -10,6 +10,8 @@ header{
     background-color: #DEB6AB;
     position: relative;
     top: 0;
+    padding-top: 0.1rem; 
+    
 }
 .logo{
     position: absolute;
@@ -26,12 +28,17 @@ body{
 }
 
 nav{
-    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /*
     right: 30px;
     bottom: 0px;
+*/
 }
 
 nav ul li{
+    width: 800px;
     float: left;
     color: #F8ECD1;
     width: auto;
@@ -56,7 +63,7 @@ nav ul li a:hover{
 
 #banner img{
     display: block;
-    width: 52%;
+    width: 500px;
     margin-bottom: 0;
     position: relative;
     left: 32rem;
@@ -293,7 +300,7 @@ footer .footer-text a{
     color: #fff;
     top: 5%;
     margin: 1.5%;
-    height: 400px;
+    height: 460px;
     text-align: center;
 }
 
@@ -307,6 +314,6 @@ footer .footer-text a{
     margin-bottom: 4%;
     vertical-align: middle;
 }
-#text-contato #conta-data h5 img{
-    width: 50px;
+#text-contato #conta-data h5 svg{
+    width: 40px;
 }
