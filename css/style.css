@@ -1,3 +1,11 @@
+@media (max-width: 600px)
+{
+  .facet_sidebar
+   {
+    display: none;
+   }
+}
+
 .container{
     height: 200px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
