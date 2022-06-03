@@ -33,9 +33,34 @@
         </h1>
 
         <section id="text-contato">
-            <form action="meu_form" id="meu_form">
-                p
+            <form name="meu_form" id="meu_form">
+                <p class="nome">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nomeid" placeholder="Ex: Fulano de tal" required="required" name="nome"/>
+                    
+                </p>
+                <p class="phone">
+                    <label for="phone">Telefone:</label><br>
+                    <input type="phone" id="phoneid" placeholder="(xx) xxxxx-xxxx" name="fone"/>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required="required" />
+                </p>
+                <p>
+                    <textarea placeholder="mensagem" required="required"></textarea>
+                </p>
+                <button type="submit" form="meu_form">Enviar</button>
             </form>
+
+            <div id="conta-data">
+                <h4>Meu site</h4>
+                <h5><img src="" alt="endereço"><br>Rua tal...</h5>
+                <h5><img src="" alt="telefone"><br>+55 11232145</h5>
+                <h5><img src="" alt="email"><br>contato@mail.com</h5>
+                <h5><img src="" alt="facebook"><br>facebo.com</h5>
+                <h5><img src="" alt="instagram">@doces</h5>
+            </div>
           
         </section>
 
