@@ -57,7 +57,7 @@ nav ul li a:hover{
 }
 
 section{
-    grid-area: section;
+    grid-area: section section;
 }
 
 #banner{
