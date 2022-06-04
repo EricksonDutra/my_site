@@ -1,45 +1,47 @@
-:root{
-    --footer-color:#85586F;
-    --body-color: #F8ECD1;
-    --header-color: #DEB6AB;
-    --other-color: #AC7D88;
-}
+/* #85586F */
+/*#AC7D88*/
+/*DEB6AB*/
+/*F8ECD1*/
 
 .container{
-    display: grid;
-    grid-template-areas: "header"
-                        "section" 
-                        "footer";
-    /* grid-auto-flow: row; */
+    height: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #777;
 }
 
 body{
-    background: var(--body-color);
+    background: #F8ECD1;
 }
 header{
-    grid-area: header;
-    background-color: var(--header-color);
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: #DEB6AB;
+    position: relative;
+    top: 0;
+    padding-top: 0.1rem; 
+    
 }
 .logo{
-    align-content: flex-start;
-    width: 6rem;
+    position: relative;
+    width: 300px;
+    height: auto;
 }
 .logo img{
-    width: 100%;
+    width: 35%;
     margin-left: 10%;
 }
 
-.cont ul{
-    flex-direction: row;
-    flex-wrap: wrap;
-    display: flex;
-    width: 100%;
+nav{
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
 }
 
 nav ul li{
-    flex-wrap: wrap;
+    width: 800px;
+    float: left;
+    color: #F8ECD1;
+    width: auto;
     margin: 0.8em;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -47,7 +49,6 @@ nav ul li{
 }
 
 nav ul li a{
-    width: 1rem;
     text-decoration: none;
     color: #F8ECD1;
 }
@@ -56,19 +57,17 @@ nav ul li a:hover{
     color: #b13030;
 }
 
-section{
-    grid-area: section;
-}
-
 #banner{
     width: 100%;
-    display: flex;
-    align-content: flex-end;
-    justify-content: center;
 }
 
 #banner img{
+    display: block;
     width: 500px;
+    margin-bottom: 0;
+    position: relative;
+    left: 32rem;
+    top: 3rem;
 }
 
 .modalDialog {
@@ -131,7 +130,6 @@ section{
 }
 
 footer{
-    grid-area: footer;
     width: 100%;
     height: 18%;
     background-color: #b50909;
