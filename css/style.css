@@ -4,7 +4,17 @@
     --header-color: #DEB6AB;
     --other-color: #AC7D88;
 }
-
+@media  (max-width: 720px) {
+    .menu{
+        width: 100%;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
 .container{
     display: grid;
     grid-template-areas: "aside "
@@ -154,6 +164,7 @@ footer{
     bottom: 0;;
     float: left;
     font-family:'verdana';
+    display: flex;
 }
 
 footer .footer-text{
