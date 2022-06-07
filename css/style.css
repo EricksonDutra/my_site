@@ -7,7 +7,7 @@
 
 .container{
     display: grid;
-    grid-template-areas: "header"
+    grid-template-areas: "aside "
                         "section" 
                         "footer";
     /* grid-auto-flow: row; */
@@ -16,14 +16,21 @@
 body{
     background: var(--body-color);
 }
-header{
-    grid-area: header;
-    background-color: var(--header-color);
+aside{
+    grid-area: aside;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
+aside h1{
+    width: 100%;
+}
+header{
+    background-color: var(--header-color);
+    display: flex;
+}
 .logo{
-    align-content: flex-start;
+    /*align-content: flex-start;*/
     width: 6rem;
 }
 .logo img{
@@ -31,16 +38,22 @@ header{
     margin-left: 10%;
 }
 
-.cont ul{
-    flex-direction: row;
-    flex-wrap: wrap;
+.menu{
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    width: auto;
 }
 
-nav ul li{
+.menu ul{
+    display: flex;
     flex-wrap: wrap;
-    margin: 0.8em;
+}
+
+.menu ul li{
+    display: block;
+    width: auto;
+    margin-left: 0.5em;
+    margin-right: 0.1em;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
