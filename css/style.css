@@ -9,6 +9,9 @@ a{
     color: #fff;
 }
 @media  (max-width: 720px) {
+    aside{
+        justify-content: center;
+    }
     .menu{
         width: 100%;
     }
@@ -17,6 +20,8 @@ a{
     }
     footer{
         flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 3;
     }
     #clientes-code{
         flex-direction: column;
@@ -27,10 +32,15 @@ a{
 
     section#text-contato {
         flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
     }
     #meu_form{
         width: 100%;
     }
+
 }
 /* .container{
     display: grid;
@@ -289,16 +299,18 @@ footer .footer-text a{
     width: 100%;
     height: 100%;
     display: flex;
+
 }
 
 #text-contato form{
-    width: 38%;
+    width: 60%;
     position: relative;
     float: left;
     background-color: #fff;
     padding: 2%;
     top: 5%;
     min-height: 400px;
+    margin-top: 1.5%;
 }
 
 #text-contato form label{
@@ -337,15 +349,15 @@ footer .footer-text a{
 
 
 #text-contato #conta-data{
-    width: 26%;
+    width: 60%;
     position: relative;
     float: left;
-    padding: 2%;
+    padding: 0.5%;
     background-color: #b50909;
     color: #fff;
     top: 5%;
     margin: 1.5%;
-    height: 460px;
+    height: 99%;
     text-align: center;
 }
 
