@@ -18,19 +18,19 @@ a{
     .menu ul{
         flex-direction: column;
     }
+    section#clientes-code{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .client-img{
+        display: contents;
+    }
     footer{
         flex-direction: column;
         flex-wrap: wrap;
         flex-grow: 3;
     }
-    #clientes-code{
-        flex-direction: column;
-
-    }
-    #clientes-code .config-clientes{
-        width: 80%;
-    }
-
+   
     section#text-contato {
         flex-direction: column;
         width: 100%;
@@ -41,15 +41,10 @@ a{
     #meu_form{
         width: 100%;
     }
-
+    .config-clientes{
+        overflow-wrap: break-word;
+    }
 }
-/* .container{
-    display: grid;
-    grid-template-areas: "aside "
-                        "section" 
-                        "footer"; */
-    /* grid-auto-flow: row;
-} */
 
 body{
     background: var(--body-color);
@@ -216,37 +211,43 @@ footer .footer-text a{
 }
 
 .img-titulo{
-    width: 20%;
-    height: auto;
+    grid-area: img;
+    width: 150px;
     margin-bottom: 10px;
-    position: relative;
-    float: left;
+    /* position: relative; */
+    /* float: left; */
     margin-right: 5%;
 }
 
 .img-titulo img{
-    width: 90%;
+    width: 100%;
     margin-left: 10%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #clientes-code{
     display: grid;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "img clt";
 }
 
-section#clientes-code{
+/* section#clientes-code{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px
+} */
+
+.clt{
+    grid-area: clt;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-
 #clientes-code .config-clientes{
-    width: 90%;
+    width: 290px;
+    margin-top: 2%;
     border: 1px solid #b50909;
     background-color: #fff;
-    margin-top: 2%;
 }
 
 #clientes-code .config-clientes p{
