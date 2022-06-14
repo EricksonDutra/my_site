@@ -4,6 +4,7 @@
     --header-color: #DEB6AB;
     --other-color: #AC7D88;
 }
+
 a{
     text-decoration: none;
     color: #fff;
@@ -96,6 +97,7 @@ header{
 nav ul li a{
     text-decoration: none;
     color: #F8ECD1;
+    text-shadow: -1px 1px 5px #700b3fb2;
 }
 
 nav ul li a:hover{
@@ -110,12 +112,20 @@ section{
     /* height: 70%; */
 }
 
+.title{
+    margin: 0 auto;
+    width: 400px;
+}
+
 #title2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Satisfy', cursive;
     color: var(--footer-color);
     text-shadow: -4px -6px 5px #b5090988 ;
-    font-size: 2.30rem;
+    font-size: 2em;
     font-style: italic;
+    letter-spacing: .4rem;
+    text-align: center;
 }
 
 #banner{
@@ -259,6 +269,7 @@ footer .footer-text a{
     border: 1px solid #b50909;
     background-color: #fff;
     border-radius: 20px;
+    box-shadow: -5px 5px 2px 1px #85586F;
 }
 
 #clientes-code .config-clientes p{
